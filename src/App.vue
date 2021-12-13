@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+
+    <header>
+      <Header/>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
@@ -26,5 +38,16 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: red;
+  background-image: url("./assets/images/home-background-hero-scaled.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
