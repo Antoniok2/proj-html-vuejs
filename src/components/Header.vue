@@ -1,57 +1,57 @@
 <template>
-<div class="container">
-  <!-- Button header -->
-  <div class="button">
-    <div class="add_button"><span>+</span></div>
-  </div>
-  <!-- Barra di navigazione -->
-  <div class="navigation_bar">
-    <div class="logo">
-      <img src="../assets/images/takeout-logo.png" alt="">
+  <div class="container">
+    <!-- Button header -->
+    <div class="button">
+      <div class="add_button"><span>+</span></div>
     </div>
-    <nav class="menu">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Order Online</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">News</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-        <li>
-          <a href="#">Carrello</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <!-- ICONS -->
-  <div class="icons">
-    <div class="icone">
-      <div class="icon_demos">
-        <span><font-awesome-icon icon="folder-plus"></font-awesome-icon></span>
-        <h6>Demos</h6>
+    <!-- Barra di navigazione -->
+    <div class="navigation_bar">
+      <div class="logo">
+        <img src="../assets/images/takeout-logo.png" alt="">
       </div>
-      <div class="icon_sale">
-        <span>$39</span>
-        <h6>On sale</h6>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Order Online</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Carrello</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ICONS -->
+    <div class="icons">
+      <div class="icone">
+        <div class="icon_demos">
+          <span><font-awesome-icon icon="folder-plus"></font-awesome-icon></span>
+          <h6>Demos</h6>
+        </div>
+        <div class="icon_sale">
+          <span>$39</span>
+          <h6>On sale</h6>
+        </div>
       </div>
     </div>
+    <div class="jumbo_text">
+      <span>Hungry?</span>
+      <h2>Great Food</h2>
+      <h3>Delivered</h3>
+      <button>VIEW OUR MENU </button>
+    </div>
   </div>
-  <div class="jumbo_text">
-    <span>Hungry?</span>
-    <h2>Great Food</h2>
-    <h3>Delivered</h3>
-    <button>VIEW OUR MENU </button>
-  </div>
-</div>
 </template>
 
 <script>
