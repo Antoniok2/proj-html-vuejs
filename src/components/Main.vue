@@ -3,6 +3,7 @@
         <PopularDishes/>
         <Jumbotron/>
         <Categories/>
+        <Jumbotron2/>
     </div>
 </template>
 
@@ -10,13 +11,15 @@
 import PopularDishes from '@/components/PopularDishes.vue'
 import Jumbotron from '@/components/Jumbotron.vue'
 import Categories from '@/components/Categories.vue'
+import Jumbotron2 from '@/components/Jumbotron2.vue'
 
 export default {
   name: 'Main',
   components: {
     PopularDishes,
     Jumbotron,
-    Categories
+    Categories,
+    Jumbotron2
   }
 }
 </script>
