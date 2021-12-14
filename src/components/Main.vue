@@ -4,6 +4,7 @@
         <Jumbotron/>
         <Categories/>
         <Jumbotron2/>
+        <News/>
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import PopularDishes from '@/components/PopularDishes.vue'
 import Jumbotron from '@/components/Jumbotron.vue'
 import Categories from '@/components/Categories.vue'
 import Jumbotron2 from '@/components/Jumbotron2.vue'
+import News from '@/components/News.vue'
 
 export default {
   name: 'Main',
@@ -19,7 +21,8 @@ export default {
     PopularDishes,
     Jumbotron,
     Categories,
-    Jumbotron2
+    Jumbotron2,
+    News
   }
 }
 </script>
