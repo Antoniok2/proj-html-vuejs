@@ -3,22 +3,31 @@
         <div class="download_app">
             <h3>Download Our</h3>
             <h4>Ordering App</h4>
-            <div class="apple_google">
-                <div>
-                    <span><font-awesome-icon icon="car"></font-awesome-icon></span>
-                    <h6>Download on the</h6>
+            <div class="download">
+                <div class="apple_google">
                     <span>
-                        App Store
+                        <font-awesome-icon icon="car" class="ico"></font-awesome-icon>
+                        <div>
+                            <h6>Download on the</h6>
+                            <span>
+                                App Store
+                            </span>
+                        </div>
                     </span>
                 </div>
-                <div>
-                    <span><font-awesome-icon icon="car"></font-awesome-icon></span>
-                    <h6>GET IT ON</h6>
+                <div class="apple_google">
                     <span>
-                        Google Play
+                        <font-awesome-icon icon="car" class="ico"></font-awesome-icon>
+                        <div>
+                            <h6>GET IT ON</h6>
+                            <span>
+                                Google Play
+                            </span>
+                        </div>
                     </span>
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
@@ -57,18 +66,40 @@ export default {
                 color: #fcdc31;
             }
 
+            .download {
+                display: flex;
+            }
+
             .apple_google {
                 display: flex;
-                margin-top: 30px ;
+                width: 140px;
+                margin-top: 30px;
+                margin-right: 5px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
 
-                div {
-                    width: 150px;
-                    color: white;
-                    background-color: black;
-                    margin-top: 20px;
+                span {
+                    display: flex;
+                    align-items: center;
                     margin-right: 5px;
-                    padding: 10px;
-                    border-radius: 5px;
+
+                    .ico {
+                        margin: 5px 8px;
+                        font-size: 25px;
+                    }
+
+                    div {
+                        margin: 5px 2px;
+
+                        h6 {
+                            font-size: 8px;
+                        }
+
+                        span {
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }
