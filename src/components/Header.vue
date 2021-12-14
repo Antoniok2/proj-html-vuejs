@@ -157,10 +157,12 @@ export default {
     button {
       font-size: 10px;
       background-color: red;
+      border: solid rgba(0, 0, 0, 0);
       color: white;
       padding: 5px 10px;
       border-radius: 20px;
       margin: 10px 0;
+      cursor: pointer;
     }
   }
 </style>
