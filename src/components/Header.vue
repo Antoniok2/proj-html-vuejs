@@ -11,23 +11,8 @@
       </div>
       <nav class="menu">
         <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Order Online</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">News</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Carrello</a>
+          <li v-for="section, i in details" :key="i">
+            <a href="#">{{section}}</a>
           </li>
         </ul>
       </nav>
@@ -57,6 +42,9 @@
 <script>
 export default {
   name: 'Header',
+  props: {
+    details: Array
+  }
 
 }
 </script>

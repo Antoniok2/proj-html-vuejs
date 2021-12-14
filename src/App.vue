@@ -2,7 +2,7 @@
   <div id="app">
 
     <header>
-      <Header/>
+      <Header :details="headerNav"/>
     </header>
 
     <main>
@@ -27,6 +27,18 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data() {
+    return {
+      headerNav: [
+        'Home',
+        'Order Online',
+        'About',
+        'News',
+        'Contact Us',
+        'Carrello'
+      ]
+    }
   }
 }
 </script>
