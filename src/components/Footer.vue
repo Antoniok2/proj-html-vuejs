@@ -1,61 +1,12 @@
 <template>
     <div class="container">
         <div class="navigation_bars">
-            <div class="bar">
-                <h3>ORDER ONLINE</h3>
+            <div class="bar" v-for="section, i in details2" :key="section+i">
+                <h3>{{section.voce}}</h3>
                 <nav>
                     <ul>
-                        <li>
-                            <a href="#">Appetizers</a>
-                        </li>
-                        <li>
-                            <a href="#">Burgers</a>
-                        </li>
-                        <li>
-                            <a href="#">Pizza</a>
-                        </li>
-                        <li>
-                            <a href="#">Fries</a>
-                        </li>
-                        <li>
-                            <a href="#">Sides</a>
-                        </li>
-                        <li>
-                            <a href="#">Dessert</a>
-                        </li>
-                        <li>
-                            <a href="#">Beverages</a>
-                        </li>
-                        <li>
-                            <a href="#">Specials</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="bar">
-                <h3>NAVIGATE</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Alternate Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Cart</a>
+                        <li v-for="item, j in section.option" :key="j">
+                            <a href="#">{{item}}</a>
                         </li>
                     </ul>
                 </nav>
@@ -138,6 +89,9 @@
 <script>
 export default {
   name: 'Footer',
+  props: {
+      details2: Array
+  }
 
 }
 </script>

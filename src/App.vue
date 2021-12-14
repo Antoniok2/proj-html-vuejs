@@ -10,7 +10,7 @@
     </main>
 
     <footer>
-      <Footer/>
+      <Footer :details2="footerNav"/>
     </footer>
 
   </div>
@@ -37,7 +37,17 @@ export default {
         'News',
         'Contact Us',
         'Carrello'
-      ]
+      ],
+      footerNav: [
+        {
+          'voce': 'ORDER ONLINE',
+          'option': ['Appetizers', 'Burgers', 'Pizza', 'Fries', 'Sides', 'Dessert', 'Beverages', 'Specials']
+        },
+        {
+          'voce': 'NAVIGATE',
+          'option': ['Home', 'Alternate Home', 'Menu', 'About', 'News', 'Contact Us', 'Cart']
+        },
+      ]  
     }
   }
 }
