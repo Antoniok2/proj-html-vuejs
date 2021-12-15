@@ -90,6 +90,10 @@ export default {
                 margin: 0 auto;
                 text-align: center;
 
+                &:hover {
+                transform: scale(1.05);
+                }
+
                 img {
                     width: 80%;
                 }

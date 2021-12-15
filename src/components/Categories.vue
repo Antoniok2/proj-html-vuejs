@@ -98,6 +98,10 @@ export default {
                 width: calc((100% / 4) - 10px);
                 margin: 10px 5px;
 
+                &:hover {
+                transform: scale(1.02);
+                }
+
                 img {
                     width: 100%;
                     object-fit: cover;

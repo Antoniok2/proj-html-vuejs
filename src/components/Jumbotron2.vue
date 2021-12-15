@@ -78,6 +78,7 @@ export default {
                 background-color: black;
                 color: white;
                 border-radius: 5px;
+                cursor: pointer;
 
                 span {
                     display: flex;

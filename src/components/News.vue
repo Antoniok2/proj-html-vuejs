@@ -59,14 +59,20 @@ export default {
                 flex-direction: column;
                 width: 48%;
                 margin: 10px auto;
+                cursor: pointer;
+
+                &:hover {
+                transform: scale(1.02);
+                }
 
                 img {
                     width: 80%;
                 }
 
                 h1 {
-                    font-size: 30px;
+                    font-size: 25px;
                     margin: 5px 0;
+                    text-align: center;
                 }
 
                 span {
